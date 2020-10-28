@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Latom Studios',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: "Roboto"
       ),
       home: TheHome(),
     );
