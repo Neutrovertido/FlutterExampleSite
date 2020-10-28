@@ -31,9 +31,12 @@ class LandingPage extends StatelessWidget {
           ],
         ),
       ),
-        Image.asset("images/fireforce.png",
-        width: 400,
-        height: 400,)
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: 40),
+          child: Image.asset("images/fireforce.png",
+          width: 400,
+          height: 400,),
+        )
         
     ];
   }
