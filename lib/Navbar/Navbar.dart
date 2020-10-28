@@ -57,9 +57,10 @@ class DesktopNavbar extends StatelessWidget {
                   width: 30,
                 ),
                 MaterialButton(
+                    padding: EdgeInsets.all(17),
                     color: Colors.orange,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(15))),
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
                     onPressed: () {},
                     child: Text("Watch now!",
                         style: TextStyle(

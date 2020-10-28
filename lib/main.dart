@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertutorial/LandingPage/LandingPage.dart';
 import 'package:fluttertutorial/Navbar/Navbar.dart';
 
 void main() {
@@ -11,10 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Latom Studios',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: "Roboto"
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Roboto"),
       home: TheHome(),
     );
   }
@@ -31,7 +29,10 @@ class TheHome extends StatelessWidget {
                 end: Alignment.bottomLeft,
                 colors: [Colors.red, Colors.orange])),
         child: Column(
-          children: <Widget>[Navbar()],
+          children: <Widget>[Navbar(), Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+            child: LandingPage(),
+          )],
         ),
       ),
     );
